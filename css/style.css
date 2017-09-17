@@ -1,0 +1,316 @@
+
+body {
+	background-color: #DDDDDD;
+	color: black;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+ul { padding: 0; margin: 0; }
+figure { margin: 0; }
+p:last-child { margin-bottom: 0; }
+a { color: #3f97c9; }
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+
+
+/* Navigation*/
+
+.nav-slide {
+	position: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 50;
+	background: none;
+}
+
+.nav-slide nav { width: 100%; }
+
+.nav-slide .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.nav-slide ul{
+	list-style:none;
+	margin: 0;
+    padding: 0;
+}
+
+.nav-slide li { 
+	display: inline-block;
+	float: right;
+	width: auto;	
+}
+
+.navi { 
+	text-align: center;	
+	 }
+
+.nav-bg {
+	/*display: -ms-flexbox;/*定义块级flexbox容器*/
+	/*
+	-ms-flex-direction:row;/*定义伸缩项目在主轴的排列方向*/
+	/*-ms-flex-align: center;/*伸缩项目的外边距盒在该行的侧轴上居中放置。*/
+	/*    align-items: center;
+	-ms-flex-pack: justify;/*伸缩项目会平均地分布在行里。*/
+	/*    justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;/*可以直接控制伸缩项目是否隐藏、裁剪或者出现滚动条。*/
+	position: center;
+  	justify-content: flex-end;
+  	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.nav-bg a{
+	text-align: center;
+}
+
+.navbar-nav .nav-cube { float: none; }
+
+.navbar-nav .nav-cube+.nav-cube { 
+	margin-left: 0; 
+	margin-right: 0；
+	}
+
+
+.logo { 
+	font-size: 3rem;
+	padding: 10px;
+}
+
+.nav-slide a.nav-brand {
+	font-size: 2.5rem;
+	padding-top: 10px;
+	padding-bottom: 0;
+	
+	margin-bottom: 10px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	width: auto;
+}
+
+.nav-slide a { text-transform: capitalize; }/*大写显示的字母*/
+
+.nav-slide a,
+.navbar-nav .nav-link {
+	background-color: transparent;
+	color: black;
+    display: table-cell;/*此元素会作为一个表格单元格显示*/
+    font-weight: 400;
+    font-size: 1.2em;
+	vertical-align: middle;
+    width: 130px; 
+}
+
+
+.navi {
+		position: static;
+		height: auto !important;		
+	}
+
+.nav-slide li:nth-of-type(1) { background-color: rgba(56, 182, 230, 0.62); }/*li:nth-of-type(1)规定属于其父元素的第1个li元素的每个li.*/
+.nav-slide li:nth-of-type(2) { background-color: rgba(237, 84, 76,  0.62); }
+.nav-slide li:nth-of-type(3) { background-color: rgba(234, 163, 25, 0.62); }
+.nav-slide li:nth-of-type(4) { background-color: rgba(22, 181, 163, 0.62); }
+.nav-slide li:nth-of-type(5) { background-color: rgba(68, 127, 202, 0.62); }
+
+
+.nav-slide .nav-cube.selected .nav-link,
+.nav-slide .nav-link:hover,
+.nav-slide .nav-link:focus {
+	color: #ffffff;
+}
+
+
+
+.nav-slide .nav-cube:nth-of-type(1).selected .nav-link,
+.nav-slide .nav-cube:nth-of-type(1) .nav-link:hover,
+.nav-slide .nav-cube:nth-of-type(1) .nav-link:focus {
+	cursor: pointer;
+	background-color: #38b6e6;
+
+}
+
+.nav-slide .nav-cube:nth-of-type(2).selected .nav-link,
+.nav-slide .nav-cube:nth-of-type(2) .nav-link:hover,
+.nav-slide .nav-cube:nth-of-type(2) .nav-link:focus {
+	cursor: pointer;		
+	background-color: #ed544c;
+}
+
+.nav-slide .nav-cube:nth-of-type(3).selected .nav-link,
+.nav-slide .nav-cube:nth-of-type(3) .nav-link:hover,
+.nav-slide .nav-cube:nth-of-type(3) .nav-link:focus {
+	cursor: pointer;	
+	background-color: #eaa319;	
+}
+
+.nav-slide .nav-cube:nth-of-type(4).selected .nav-link,
+.nav-slide .nav-cube:nth-of-type(4) .nav-link:hover,
+.nav-slide .nav-cube:nth-of-type(4) .nav-link:focus {
+	cursor: pointer;
+	background-color: #16b5a3;
+}
+
+.nav-slide .nav-cube:nth-of-type(5).selected .nav-link,
+.nav-slide .nav-cube:nth-of-type(5) .nav-link:hover,
+.nav-slide .nav-cube:nth-of-type(5) .nav-link:focus {
+	cursor: pointer;
+	background-color: #447fca;		
+}
+
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+
+/* Page one is in login.css*/
+
+
+
+/* Page Two is in gallery.css */
+
+
+
+/* Page Three is in posting.css*/
+
+
+
+/* Page Four */
+
+
+
+/* Page Five is in contact.css*/
+
+
+
+/* Footer */
+
+.footer-icon-link {
+	background-color: white;
+    color: black;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.footer-icon-link:hover {
+	background-color: black;
+	color: white;
+}
+
+.footer-icon-link:last-child { margin-right: 0; }
+
+.footer-container {
+	position: relative;
+	margin-top: 20px;
+	bottom: 0;
+	left: 0;	
+}
+
+.footer-icons-container { 
+	padding-top: 10px; 
+	margin-bottom: 30px; 
+	padding-bottom: 30px;
+ }
+
+.footer-school {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+	text-align: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.footer-school a {
+	color: black;
+}
+
+.cd-hero-slider p:last-child { margin-bottom: 0; }
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(22, 181, 163, 0.62);
+    /*min-width: 160px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color:white;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(22, 181, 163, 0.62);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-content {
+    background-color: rgba(22, 181, 163, 0.62);
+}
+
+
